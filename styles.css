@@ -39,7 +39,7 @@ button:hover{
 }
 
 #newYear {
-    top: 120%;
+    top: 130%;
     left: 50%;
     color: black;
     transform: translate(-50%, -50%);
@@ -165,7 +165,7 @@ svg {
     color: rgba(0, 0, 0, 0.85);
     width: max-content;
     color: white;
-    top: 120%;
+    top: 130%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 1px 1px 5px black;
