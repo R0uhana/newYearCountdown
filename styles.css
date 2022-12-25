@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,500&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background: #cb8016;
+    background: linear-gradient(to right, #cb4327, #cb8016);
+    overflow: hidden;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    border: none;
+    font-size: 2rem;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.85);
+    display: block;
+    transition: 0.2s;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+button:hover{
+    background-color:rgba(255,255,50,0.5);
+    color: white;
+    box-shadow: 8px 8px 20px black;
+    width: 220px;
+}
+
+#newYear {
+    top: 120%;
+    left: 50%;
+    color: black;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 6rem;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 5px black;
+}
+
+.dropDown {
+    margin-top: 60%;
+    transition: 0.4s ease-in;    
+}
+
+.DropIn {
+    top: 50% !important;
+    transition: 0.4s ease-out;
+}
+
+.DropInYear {
+    top: 20% !important;
+    transition: 0.4s ease-out;
+}
+
+.DropInNewYear {
+    top: 50% !important;
+    transition: 1s ease-out;
+    text-shadow: 2px 2px 5px white !important;
+}
+
+#time, #year {
+    position: absolute;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: bold;
+    font-size: 10rem;
+    color: white;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 5px black;
+}
+
+#year {
+    font-size: 6rem;
+}
+
+
+.event {
+    color: white;
+    width: 300px;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 5px 5px 10px black;
+    position: absolute;
+}
+
+.left {
+    top: -20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.right {
+    top: -20%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.dropEvent {
+    transition: 5.7s ease;
+    top:130%
+}
+
+svg {
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255,255,50,0.5);
+}
+
+.expand {
+    height: 440px;
+    width: 440px;
+    transition: 0.5s;
+    color: black;
+}
+
+.disappearText {
+    font-size: 0 !important;
+    transition: 0.3s;
+}
+
+.disappearCircle {
+    width: 0;
+    height: 0;
+    transition: 0.3s;
+}
+
+.biggerFont {
+    font-size: 9rem !important;
+    transition: 0.3s;
+    color: black !important;
+    text-shadow: 2px 2px 5px white !important;
+}
+
+
+.appearCircle {
+    height: 440px;
+    width: 440px;
+    transition: 0.5s;
+    color: white;
+}
+
+#quote {
+    position: absolute;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.85);
+    width: max-content;
+    color: white;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 5px black;
+}
+
+.DropInQuote {
+    top: 95% !important;
+    transition: 1s;
+}
+
+.changeBackground {
+    background: #f09819;
+    background: linear-gradient(to right, #ff512f, #f09819) !important;
+    transition: 2s;
+}
