@@ -9,12 +9,11 @@
 
 html, body {
     height: 100%;
-    background: #cb8016;
-    background: linear-gradient(to right, #cb4327, #cb8016);
     overflow: hidden;
+    transition: 0.2s;
 }
 
-button {
+#beginBtn {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -31,8 +30,7 @@ button {
     box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5);
 }
 
-button:hover{
-    background-color:rgba(255,255,50,0.5);
+#beginBtn:hover{
     color: white;
     box-shadow: 8px 8px 20px black;
     width: 220px;
@@ -123,7 +121,7 @@ svg {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgba(255,255,50,0.5);
+    color: white;
 }
 
 .expand {
@@ -176,8 +174,119 @@ svg {
     transition: 1s;
 }
 
-.changeBackground {
-    background: #f09819;
-    background: linear-gradient(to right, #ff512f, #f09819) !important;
-    transition: 2s;
+.themeDiv {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: 1s;
+    width: 80px;
+    height: 80px;
+}
+
+.themeBtns {
+    position:absolute;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    transition: 0.3s;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    font-size: .8rem;
+}
+
+#themeBtn {
+    z-index:1;
+}
+
+#themeBtn:hover{
+    color: white;
+    box-shadow: 8px 8px 15px black;
+    text-shadow: 1px 1px 2px black;
+}
+
+.invisible {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    margin: 50px
+}
+
+.moveRight {
+    right: -20%;
+}
+
+.popUp {
+    margin-bottom: 100px;
+}
+
+.popLeft {
+    margin-right: 100px;
+}
+
+.popDiag {
+    margin-bottom: 100px;
+    margin-right: 100px;
+}
+
+.themeOpt:hover {
+    box-shadow: 8px 8px 15px black;
+}
+
+#klev {
+    background-image: -webkit-linear-gradient(45deg, rgba(18,18,18,1) 50%, rgba(10,79,32,1) 50%);
+    color: white;
+    text-shadow: 1px 1px 2px black;
+
+}
+
+#beach {
+    background-image: -webkit-linear-gradient(45deg, #DECBA4 50%, #3E5151 50%);
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+#dawn {
+    background-image: -webkit-linear-gradient(45deg, #302b63 50%, #0f0c29 50%);
+    color: white;
+    text-shadow: 1px 1px 2px black;
+
+}
+
+.selectedKlev {
+    background: rgb(18,18,18);
+    background: linear-gradient(0deg, rgba(18,18,18,1) 0%, rgba(10,79,32,1) 100%);
+    transition: 0.2s;
+}
+
+.selectedBeach {
+    background-color: #3E5151;
+    background-image: linear-gradient(to right, #DECBA4, #3E5151);
+    transition: 0.2s;
+}
+
+.selectedDawn {
+    background-color: #302b63;
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    transition: 0.2s;
+}
+
+.klev:hover {
+    background-color:rgba(10,79,32,1);
+}
+
+.beach:hover {
+    background-color:#3E5151;
+}
+
+.dawn:hover {
+    background-color:#302b63;
+}
+
+.addBorder {
+    border: 3px solid white;
 }
