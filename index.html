@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +11,14 @@
     <link rel='icon' href="assets/happiness.png">
     <script src="script.js" defer></script>
 </head>
-<body id="body">
-    <button id="beginBtn">BEGIN</button>
+
+<body id="body" class="selectedKlev">
+    <button id="beginBtn" class="klev">BEGIN</button>
     <div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" id="circle" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
-            <circle id="hello" cx="8" cy="8" r="8"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" id="circle" fill="currentColor"
+            class="bi bi-circle-fill" viewBox="0 0 16 16">
+            <circle id="hello" cx="8" cy="8" r="8" />
+        </svg>
         <span id="year">2022</span>
         <span id="time">9.99</span>
     </div>
@@ -30,7 +34,17 @@
     </div>
     <div>
         <span id="newYear">Happy New Year</span>
-        <p id="quote">"In order to be successful in the new year, stay focused, develop a positive attitude and be passionate with your dreams." <strong>Bamigboye Olurotimi</strong></p>    
+        <p id="quote">"In order to be successful in the new year, stay focused, develop a positive attitude and be
+            passionate with your dreams." <strong>Bamigboye Olurotimi</strong></p>
+    </div>
+    <div class="themeDiv">
+        <button class="themeBtns klev" id="themeBtn">Themes</button>
+        <div class="themes">
+            <button id="klev" class="themeBtns themeOpt invisible addBorder">Klev</button>
+            <button id="beach" class="themeBtns themeOpt invisible">Sandy Beach</button>
+            <button id="dawn" class="themeBtns themeOpt invisible">Blue Dawn</button>
+        </div>
     </div>
 </body>
+
 </html>
